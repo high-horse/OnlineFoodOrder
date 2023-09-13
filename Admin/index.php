@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 ?>
+<!-- this is test. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -85,7 +86,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
     </div>
   </div>
-  <!-- test -->
 
 </body>
 
