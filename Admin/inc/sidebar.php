@@ -47,6 +47,21 @@
         </ul>
       </li>
 
+      <li class="sub-menu">
+        <a href="javascript:;" class="">
+          <i class="icon_document_alt"></i>
+          <span>Discount</span>
+          <span class="menu-arrow arrow_carrot-right"></span>
+        </a>
+        <ul class="sub">
+          <li> <a class="" href="discountSetup.php">Discount </a></li>
+
+        </ul>
+      </li>
+      <li>
+
+      </li>
+
     </ul>
     <!-- sidebar menu end-->
   </div>
