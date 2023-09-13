@@ -1,12 +1,12 @@
 <?php
-include '../classes/Adminlogin.php';?>
+include '../classes/Adminlogin.php'; ?>
 <?php
 $al = new Adminlogin();
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $adminUser = $_POST['adminUser'];
- // $adminPass = //md5($_POST['adminPass']);
- $adminPass =  $_POST['adminPass'];
-$loginChk = $al->adminLogin($adminUser,$adminPass);
+  // $adminPass = //md5($_POST['adminPass']);
+  $adminPass =  $_POST['adminPass'];
+  $loginChk = $al->adminLogin($adminUser, $adminPass);
 }
 
 
@@ -51,13 +51,13 @@ $loginChk = $al->adminLogin($adminUser,$adminPass);
   <div class="container">
 
     <form class="login-form" action="index.php" method="post">
-    <div class="alert alert-block alert-danger fade in">
-      <button data-dismiss="alert" class="close close-sm" type="button"><i class="icon-remove"></i></button>
-      <?php
-      if (isset($loginChk)) {
-        echo $loginChk;
-      }
-      ?>
+      <div class="alert alert-block alert-danger fade in">
+        <button data-dismiss="alert" class="close close-sm" type="button"><i class="icon-remove"></i></button>
+        <?php
+        if (isset($loginChk)) {
+          echo $loginChk;
+        }
+        ?>
       </div>
 
 
@@ -72,9 +72,9 @@ $loginChk = $al->adminLogin($adminUser,$adminPass);
           <input type="password" class="form-control" placeholder="Password" name="adminPass">
         </div>
         <label class="checkbox">
-                <input type="checkbox" value="remember-me"> Remember me
-                <span class="pull-right"> <a href="#"> Forgot Password?</a></span>
-            </label>
+          <input type="checkbox" value="remember-me"> Remember me
+          <span class="pull-right"> <a href="#"> Forgot Password?</a></span>
+        </label>
         <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
 
       </div>
@@ -82,10 +82,10 @@ $loginChk = $al->adminLogin($adminUser,$adminPass);
     <div class="text-right">
       <div class="credits">
 
-        </div>
+      </div>
     </div>
   </div>
-
+  <!-- test -->
 
 </body>
 
